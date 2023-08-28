@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
-    
+
     <body>
         <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 
@@ -19,65 +19,71 @@
           <div id="drag-1" class="draggable point"></div>
           <div id="drag-2" class="draggable point"></div>
         </div>
-        <div id="inputWindow">
-          <div class="group">
-            <div class="row">
-              <label class="label">
-                Parallel offset:
-              </label>
-              <input type="text" id="p3par" class="inputField" value="50" oninput="redrawFromInput()" />
-            </div>
-            <div class="row">
-              <label class="label">
-                Perpendicular offset:
-              </label>
-              <input type="text" id="p3per" class="inputField" value="20" oninput="redrawFromInput()" />
-            </div>
-            <div class="row">
-              <label class="label">
-                Segment-length:
-              </label>
-              <div class="inputField">
-                  <input type="text" id="length" style="width: 80%" />
-                  <input type="button" style="width: 20%" onclick="redrawFromLength()" value="Set" />
+        <div id="inputWindowWrapper">
+          <div id="inputWindow">
+            <div class="group">
+              <div class="row">
+                <label class="label">
+                  Parallel offset:
+                </label>
+                <input type="text" id="p3par" class="inputField" value="50" oninput="redrawFromInput()" />
+              </div>
+              <div class="row">
+                <label class="label">
+                  Perpendicular offset:
+                </label>
+                <input type="text" id="p3per" class="inputField" value="20" oninput="redrawFromInput()" />
+              </div>
+              <div class="row">
+                <label class="label">
+                  Segment-length:
+                </label>
+                <div class="inputField">
+                    <div style="float: left; width: 80%">
+                        <input type="text" style="width: 100%" id="length" />
+                    </div>
+                    <div style="float: left; width: 20%">
+                        <input type="button" style="width: 100%" onclick="redrawFromLength()" value="Set" />
+                    </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="group">
-            <div class="row">
-              <label class="label">
-                First point:
-              </label>
-              <div class="inputField">
-                x: <input id="x1coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
-                y: <input id="y1coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+            <div class="group">
+              <div class="row">
+                <label class="label">
+                  First point:
+                </label>
+                <div class="inputField">
+                  x: <input id="x1coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                  y: <input id="y1coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                </div>
+              </div>
+              <div class="row">
+                <label class="label">
+                  Second point:
+                </label>
+                <div class="inputField">
+                  x: <input id="x2coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                  y: <input id="y2coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                </div>
+              </div>
+              <div class="row">
+                <label class="label">
+                  Intermediate point:
+                </label>
+                <div class="inputField">
+                  x: <input id="x3coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                  y: <input id="y3coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+                </div>
               </div>
             </div>
-            <div class="row">
-              <label class="label">
-                Second point:
-              </label>
-              <div class="inputField">
-                x: <input id="x2coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
-                y: <input id="y2coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
+            <div class="group">
+              <div class="row">
+                <input type="checkbox" style="float: left" id="showGrid" onClick="toggleGrid()" checked />
+                <label class="label" onClick="toggleGridFromLabel()">
+                  Show Grid
+                </label>
               </div>
-            </div>
-            <div class="row">
-              <label class="label">
-                Intermediate point:
-              </label>
-              <div class="inputField">
-                x: <input id="x3coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
-                y: <input id="y3coord" style="width: 50px" type="text" onchange="redrawFromCoordinates()" />
-              </div>
-            </div>
-          </div>
-          <div class="group">
-            <div class="row">
-              <input type="checkbox" style="float: left" id="showGrid" onClick="toggleGrid()" checked />
-              <label onClick="toggleGridFromLabel()">
-                Show Grid
-              </label>
             </div>
           </div>
         </div>
