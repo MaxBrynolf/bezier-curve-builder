@@ -1,7 +1,6 @@
 #rootWindow {
   height: 90%;
   width: 100%;
-
 }
 #bezierWindow {
   height: 100%;
@@ -60,10 +59,11 @@
   float: right;
 }
 .bgGrid {
-    background: linear-gradient(-90deg, rgba(0,0,0,.15) 1px, transparent 1px),
-                linear-gradient(rgba(0,0,0,.15) 1px, transparent 1px),
-                linear-gradient(-90deg, rgba(0, 0, 0, .14) 1px, transparent 1px),
-                linear-gradient(rgba(0,0,0,.14) 1px, transparent 1px);
+    background: 
+        linear-gradient(-90deg, rgba(0,0,0,.15) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.15) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .14) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.14) 1px, transparent 1px);
     background-size:
         10px 10px,
         10px 10px,
