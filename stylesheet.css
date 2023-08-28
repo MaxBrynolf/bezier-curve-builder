@@ -1,0 +1,76 @@
+
+#rootWindow {
+  height: 90%;
+  width: 100%;
+
+}
+#bezierWindow {
+  height: 100%;
+  width: 100%;
+}
+#inputWindow {
+  height: 10%;
+  border-top: 2px solid #aaa;
+  padding: 20px;
+}
+#drag-1 {
+  left: 0%;
+  top: 0%;
+  background-color: gray;
+}
+#drag-2 {
+  left: 0%;
+  top: 0%;
+  background-color: gray;
+}
+#intermediate {
+  left: 0%;
+  top: 0%;
+  background-color: #ccc;
+}
+
+.slider {
+  width: 500px;
+}
+.point {
+   width: 16px;
+   height: 16px;
+   border-radius: 8px;
+   position: absolute;
+}
+.coordinate {
+  left: 0%;
+  top: 0%;
+}
+.group {
+  width: 30%;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+.row {
+    width: 100%;
+    display: inline-block;
+}
+.label {
+  width: 30%
+  float: left;
+}
+.inputField {
+  width: 60%;
+  float: right;
+}
+.bgGrid {
+    background: linear-gradient(-90deg, rgba(0,0,0,.15) 1px, transparent 1px),
+                linear-gradient(rgba(0,0,0,.15) 1px, transparent 1px),
+                linear-gradient(-90deg, rgba(0, 0, 0, .14) 1px, transparent 1px),
+                linear-gradient(rgba(0,0,0,.14) 1px, transparent 1px);
+    background-size:
+        10px 10px,
+        10px 10px,
+        100px 100px,
+        100px 100px,
+        100px 100px,
+        100px 100px,
+        100px 100px;
+}
