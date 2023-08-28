@@ -53,11 +53,11 @@
   display: inline-block;
 }
 .label {
-  width: 30%;
+  width: 50%;
   float: left;
 }
 .inputField {
-  width: 60%;
+  width: 30%;
   float: right;
 }
 .bgGrid {
