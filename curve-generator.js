@@ -1,5 +1,4 @@
 // Initiate window
-
 var x1 = 50;
 var y1 = 50;
 var x2 = 300;
@@ -109,7 +108,7 @@ function redraw(intermediate) {
     y2string = Math.floor(offset + y2);
     x3string = Math.floor(offset + x);
     y3string = Math.floor(offset + y);
-    document.getElementById('bezierCurve').setAttribute("d", "M " + x1string + "," +                                                        + y1string +
+    document.getElementById('bezierCurve').setAttribute("d", "M " + x1string + "," + y1string +
                                                         " C " +
                                                         x1string + "," + y1string + " " +
                                                         x3string + "," + y3string + " " +
